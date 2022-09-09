@@ -18,18 +18,13 @@ int main(void)
 
 	char alphabet;
 
-
 	for (h = '0'; h <= '9'; h++)
-
 		putchar(h);
 
 	for (alphabet = 'a'; alphabet <= 'f'; alphabet++)
-
 		putchar(alphabet);
 
 	putchar('\n');
 
-
 	return (0);
-
 }
