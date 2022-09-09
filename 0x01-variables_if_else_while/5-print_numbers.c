@@ -22,7 +22,6 @@ int main(void)
 	{
 
 		printf("%i", i);
-
 		i++;
 
 	}
