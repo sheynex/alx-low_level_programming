@@ -16,6 +16,7 @@ int main(void)
 	unsigned long int h1, h2, h3;
 
 	int count;
+
 	printf("%ld, %ld, ", b1, b2);
 
 	for (count = 2; count < 98; count++)
