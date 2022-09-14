@@ -21,7 +21,7 @@ int main(void)
 	{
 		if (count == 50)
 			printf("%ld\n", j);
-		els
+		else
 
 			printf("%ld, ", j);
 
