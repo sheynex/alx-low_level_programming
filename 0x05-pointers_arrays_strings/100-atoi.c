@@ -1,9 +1,10 @@
 #include "main.h"
-#include "stdio.h"
 
 /**
  * _ato1 - convert string to an integer.
  * @s: Pointer to a character string
+ * 
+ * Desvription: converting strings to an integer
  *
  * Return: void.
  */
