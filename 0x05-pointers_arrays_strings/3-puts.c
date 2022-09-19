@@ -3,10 +3,10 @@
 
 /**
  * _puts - print a string
- * @strt: string to print
+ * @str: string to print
  *
- * Descriptio - print a string on success
- * returns no error
+ * Description: prints a string 
+ * On success: returns no error
  */
 
 void _puts(char *str)
