@@ -6,13 +6,12 @@
  *
  * Return: void.
  */
-
 int _atoi(char *s)
 {
 	int sign = 1;
 	unsigned int num = 0;
 
-	do{
+	do {
 		if (*s == '-')
 			sign *= -1;
 
