@@ -1,56 +1,21 @@
 #include "main.h"
 
 /**
- * infinite_add - adds two numbers
- * @n1: first number
- * @n2: second number
- * @r: buffer for result
- * @size_r: buffer size
+ * print_number - prints an integer
+ * @n:inteher to be printed
  *
- * Return: address of r or 0
  */
-
-char *infinite_add(char *n1, char *n2, char *r, int size_r)
+void print_number(int n)
 {
-	int i, j, k, l, m, n;
+	unsigned int num = n;
 
-	for (i = 0; n1[i]; i++)
-		;
-
-	for (j = 0; n2[j]; j++)
-		;
-
-	if (i > size_r || j > size_r)
-
-		return (0);
-	m = 0;
-
-	for (i -= 1, j -= 1, k = 0; k < size_r - 1; i--, j--, k++)
+	if (n < 0)
 	{
-		n = m;
-
-		if (i >= 0)
-			n += n1[i] - '0';
-		if (j >= 0)
-			n += n2[j] - '0';
-		if (i < 0 && j < 0 && n == 0)
-		{
-			break;
-		}
-		m = n / 10;
-		r[k] = n % 10 + '0';
+		_putchar('_');
+		num = -num;
 	}
-	r[k] = '\0';
 
-	if (i >= 0 || j >= 0 || m)
-		return (0);
-
-	for (k -= 1, l = 0; l < k; k--, l++)
-	{
-		m = r[k];
-		r[k] = r[l];
-		r[l] = m;
-	}
-	return (r);
+	if ((num / 10) > 0)
+		print_number(num / 10);
+	_putchar((num % 10) + '0');
 }
-
