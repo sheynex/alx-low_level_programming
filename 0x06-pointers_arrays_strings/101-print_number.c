@@ -5,9 +5,10 @@
  * @n:inteher to be printed
  *
  */
+
 void print_number(int n)
 {
-	unsigned int y;
+	unsigned int x;
 
 	if (n < 0)
 	{
@@ -15,10 +16,10 @@ void print_number(int n)
 		n *= -1;
 	}
 	
-	y = n;
+	x = n;
 
-	if (y / 10)
-		print_number(y / 10);
+	if (x / 10)
+		print_number(x / 10);
 
-	_putchar(y % 10 + '0');
+	_putchar(x % 10 + '0');
 }
